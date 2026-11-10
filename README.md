@@ -23,6 +23,8 @@
 ## Featured project: [CodeLens](https://github.com/arupbiswas-tech/codelens)
 Ask questions about a codebase and get answers with `file:line` citations, and review pull requests with an agent that uses retrieved code as context.
 
+<p align="center"><a href="https://github.com/arupbiswas-tech/codelens"><img src="https://raw.githubusercontent.com/arupbiswas-tech/codelens/main/docs/demo.gif" alt="CodeLens demo: index a repo, ask a question, review a pull request" width="720"></a></p>
+
 - **Stack:** Python, FastAPI, PostgreSQL + pgvector, LangGraph, Groq (LLM), local embeddings (fastembed), Docker, GitHub Actions.
 - **Retrieval:** hybrid search (vector + keyword, merged with Reciprocal Rank Fusion) with an optional reranker, measured against 29 hand-labelled questions over 4 public repos.
 - **Grounded answers:** every citation is checked against the code the model was shown; made-up references are dropped. 26/26 answers had a verified citation, 0 made-up citations, 3/3 unanswerable questions correctly refused.
